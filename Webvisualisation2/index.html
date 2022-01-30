@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <!--META TAGS-->
+        <meta charset="utf-8"/>
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Samir Barua">
+        <meta name="description" content="Analyze how weather changes as you get closer to the equator">
+
+        <!--BOOTSTARP CSS-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Styles.css">
+        <title>Weather - Samir Barua</title>
+
+    </head>
+
+    <!--BODY-->
+
+    <!--NAVBAR-->
+    <body>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <!-- Navbar content -->
+                    <a class="navbar-brand" href="index.html" style="color: coral">Latitude</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                       
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                          </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link " href="comparisons.html" tabindex="-1" >Comparisons</a>
+                        </li>
+                        <li class = "nav-item">
+                          <a class = "nav-link " href="data.html" tabindex="-1" >Data</a>
+                        </li>
+                        
+                        </ul>
+                      
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="col-lg-12">
+                        <br><h1 align="center"> Latitudes: A Weather Analysis Project</h1><br>
+                        <p align="center">The data presented here aims to analyze patterns is weather as location nears the equator. The cities that comprise the dataset
+                          were randomly assembled via OpenWeatherMap API.</p>
+                        <p align="center">Latitudes were compared to a number of parameters: Maximum Temperatures, Cloudiness, Humidity, and Wind Speed. Data presented within this site include analysis, plot images and the source data for the cities analyzed.</p><br>
+                            <a href="temperature.html"><img src="Resources/assets/images/Fig1.png"  height="400" width="100%" align="left"></a>
+                        </div>
+                      </div>
+                      <!-- Source https://www.youtube.com/watch?v=P10M8-pr-yk&ab_channel=kudvenkat -->
+                      <div class="col-lg-6">
+                        <div class="col-lg-12">
+                         
+                          <br><br><br><br><h3>Visualizations</h3>
+                          <hr>
+                          <div class="row">
+                            <div class="col-lg-6">
+                            <!-- Source in comment for img-fluid: https://www.youtube.com/watch?v=x99gNzHtm0k&ab_channel=QuentinWattTutorials -->
+                            <br><a href="temperature.html"><img src="Resources/assets/images/Fig1.png"  class="img-fluid" alt="Max Temperature Graph">
+                            </a><br>
+                            </div>
+                            <div class="col-lg-6">
+                            <br><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid" alt="Humidity Graph">
+                            </a><br>
+                            </div>  
+                            <div class="col-lg-6">
+                            <br><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid" alt="Cloudiness Graph" >
+                            </a><br>
+                            </div> 
+                            <div class="col-lg-6">
+                            <br><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid" alt="Wind Speed Graph"><br>
+                            </a>
+                            </div> 
+                          </div> 
+                        </div>
+                      </div>
+                    </div>
+                  </div><br><br><br>
+
+
+                    <footer class="footer">
+                            <div >
+                              <a href="https://github.com/ruddysimon" target="_blank">
+                                <i class="fab fa-github fa-2x"></i>
+                              </a>
+                              <p class="text text-center">
+                                <small>© Copyright Samir Barua 2021</br>
+                                Monash University©  Data Analytics Boot Camp</small>
+                              </p>
+                            </div>
+                          </footer>
+
+
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>       
+
+
+
+</html>
